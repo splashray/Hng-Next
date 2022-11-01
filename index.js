@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
     res.setHeader("content-type","application/json")
     if (req.method !== 'GET') {
-        res.end(`{"Message": "Rotues doesnt exist"}`)
+        res.end(`{"Message": "Route doesnt exist"}`)
     } else {
         if (req.url === '/') {
            res.end(`
