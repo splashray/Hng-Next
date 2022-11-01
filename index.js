@@ -10,10 +10,7 @@ const server = http.createServer((req, res) => {
     } else {
         if (req.url === '/') {
            res.end(`
-           {"slackUsername": "Splashray",
-           "age": 22,
-           "backend": true ,
-           "bio": "I am a software Developer,
+           {"slackUsername": "Splashray","age": 22,"backend": true ,"bio": "I am a software Developer,
            passionate about building software that solves daily human problems using strong analytical, critical-thinking skills,
            and technological strategies."}
            `)
